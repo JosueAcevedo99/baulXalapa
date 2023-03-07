@@ -259,9 +259,12 @@ a{
 /* small queries */
 @media (max-width: 576px) {
     #titulo{
-        font-size:small !important;
+        font-size:larger !important;
+        
     }
-
+    .titulonav{
+        font-size: 8rem !important;
+    }
     #btn-navbar{
         font-size: small !important;
     }
@@ -277,6 +280,12 @@ a{
     .derechos{
         padding-left: 0.25rem !important;
         font-size:small;
+    }
+
+    .futer {
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
 }
