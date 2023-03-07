@@ -1,0 +1,282 @@
+
+:root{
+    --font:  "Trebuchet MS";
+    --color: #fdaaa1;
+}
+
+body{
+    font-family: var(--font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--color)!important;
+}
+
+/* Ajuste a todos los botones menos el de la barra de navegación */
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--color);
+    color: #fff;
+    border-color: var(--color);
+}
+
+/* text color */
+.text-primary{
+    color: var(--color)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span{
+    font-family: var(--font);
+}
+.nav-link:hover{
+    color: var(--color)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+#titulo{
+    color: var(--color)!important;
+}
+
+#numcarrito, #numlike{
+    border-radius: 100%;
+    margin-bottom: 100%;
+}
+
+
+.contatoIcon{
+    font-size: 6rem;
+    color:  var(--color) !important;
+}
+
+
+.modal h1 {
+    font-weight: 700;
+    color: var(--dark);
+}
+.modal h2 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.modal h5 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+
+.chat-item {
+    text-align: center;
+}
+
+.chat-item .image{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.chat-item:hover {
+    background-color: rgba(28, 108, 169, 0.2);
+    
+}
+
+
+
+.chat-item h5 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+.carousel-inner h1{
+    font-size: 55px;
+    font-family: var(--font);
+}
+
+.carousel-inner h2{
+    font-size: 60px;
+    font-family: var(--font);
+}
+
+.carousel-item .btn{
+    border-color: rgb(255, 255, 255)!important;
+    background-color: var(--color) !important;
+    color: #fff !important;
+}
+.carousel-item .btn:hover{
+    font-size: larger !important;
+    background-color: var(--color) !important;
+    border-color: var(--color)!important;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--color);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* macetas */
+.active-filter-btn{
+    background-color: var(--color)!important;
+    color: #fff!important;
+    border-color: var(--color)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.collection-img:hover img{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+/* jardineras */ 
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.imgCatalogo{
+    width: 350px !important; 
+    height: 300px !important;
+    border-radius: 25px !important;
+}
+
+.imgCatalogo{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.imgCatalogo:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+
+/* banner oferta*/
+#offers{
+    background: url(../images/offer.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+
+footer a:hover{
+    color: var(--color)!important;
+}
+
+.icons{
+    font-size: x-large!important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.tabla{
+    margin-top: 5rem !important;
+}
+
+.productForm{
+    margin-top: 8rem !important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+/* small queries */
+@media (max-width: 576px) {
+    #titulo{
+        font-size:small !important;
+    }
+
+    #btn-navbar{
+        font-size: small !important;
+    }
+
+    .carousel-inner h1{
+        font-size: 35px !important;
+    }
+    
+    .carousel-inner h2{
+        font-size: 40px !important;
+    }
+
+    .derechos{
+        padding-left: 0.25rem !important;
+        font-size:small;
+    }
+
+}
